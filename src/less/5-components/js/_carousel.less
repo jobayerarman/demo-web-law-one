@@ -91,80 +91,88 @@
 // ---------------------------
 
 .carousel-control {
+  font-size: @carousel-control-font-size;
+
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0;
+  left: 0;
+
   width: @carousel-control-width;
-  .opacity(@carousel-control-opacity);
-  font-size: @carousel-control-font-size;
-  color: @carousel-control-color;
+
   text-align: center;
-  text-shadow: @carousel-text-shadow;
+
+  color: @carousel-control-color;
   background-color: rgba(0, 0, 0, 0); // Fix IE9 click-thru bug
+  text-shadow: @carousel-text-shadow;
+
+  .opacity(@carousel-control-opacity);
   // We can't have this transition here because WebKit cancels the carousel
   // animation if you trip this while in the middle of another animation.
-
   // Set gradients for backgrounds
   &.left {
-    #gradient > .horizontal(@start-color: rgba(0,0,0,.5); @end-color: rgba(0,0,0,.0001));
+    // #gradient > .horizontal(@start-color: rgba(0,0,0,.5); @end-color: rgba(0,0,0,.0001));
   }
   &.right {
-    left: auto;
     right: 0;
-    #gradient > .horizontal(@start-color: rgba(0,0,0,.0001); @end-color: rgba(0,0,0,.5));
+    left: auto;
+    // #gradient > .horizontal(@start-color: rgba(0,0,0,.0001); @end-color: rgba(0,0,0,.5));
   }
-
   // Hover/focus state
   &:hover,
   &:focus {
-    outline: 0;
-    color: @carousel-control-color;
     text-decoration: none;
-    .opacity(.9);
-  }
 
+    color: @carousel-control-color;
+    outline: 0;
+
+    .opacity(0.9);
+  }
   // Toggles
   .icon-prev,
   .icon-next,
   .glyphicon-chevron-left,
   .glyphicon-chevron-right {
     position: absolute;
-    top: 50%;
-    margin-top: -10px;
     z-index: 5;
+    top: 50%;
+
     display: inline-block;
+
+    margin-top: -10px;
   }
   .icon-prev,
   .glyphicon-chevron-left {
     left: 50%;
+
     margin-left: -10px;
   }
   .icon-next,
   .glyphicon-chevron-right {
     right: 50%;
+
     margin-right: -10px;
   }
   .icon-prev,
   .icon-next {
-    width:  20px;
-    height: 20px;
-    line-height: 1;
     font-family: serif;
+    line-height: 1;
+
+    width: 20px;
+    height: 20px;
   }
-
-
   .icon-prev {
     &:before {
-      content: '\2039';// SINGLE LEFT-POINTING ANGLE QUOTATION MARK (U+2039)
+      content: "\2039";// SINGLE LEFT-POINTING ANGLE QUOTATION MARK (U+2039)
     }
   }
   .icon-next {
     &:before {
-      content: '\203a';// SINGLE RIGHT-POINTING ANGLE QUOTATION MARK (U+203A)
+      content: "\203a";// SINGLE RIGHT-POINTING ANGLE QUOTATION MARK (U+203A)
     }
   }
 }
+
 
 // Optional indicator pips
 //
@@ -260,11 +268,11 @@
   .carousel-caption {
     left: 20%;
     right: 20%;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 
   // Move up the indicators
   .carousel-indicators {
-    bottom: 20px;
+    bottom: 5px;
   }
 }

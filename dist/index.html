@@ -1,156 +1,310 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <title>Bootstrap Boilerplate</title>
-    <meta name="author" content="Jobayer Arman">
-    <meta name="description" content="Build System Boilerplate using LESS">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <title>Justice League</title>
+        <meta name="author" content="Jobayer Arman">
+        <meta name="description" content="Build System Boilerplate using LESS">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Font-awesome CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Font-awesome CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- User Stylesheet -->
-    <!-- build:css /css/style.min.css -->
-    <link href="/dist/css/style.css" rel="stylesheet">
-    <!-- /build -->
+        <!-- User Stylesheet -->
+        <!-- build:css /css/style.min.css -->
+        <link href="/dist/css/style.css" rel="stylesheet">
+        <!-- /build -->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
 
-  <body>
+    <body>
 
-		<header class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="navbar-top">
-						<p><span class="text-muted">Phone: </span>+880 2 123456 | <span class="text-muted">Email: </span><a href="mailto:info@lawfirm.com">info@lawfirm.com</a></p>
-					</div>
-				</div>
-				<div class="col-md-4 col-md-offset-4">
-					<div class="navbar-top pull-right">
-						<a href="#">Sign Up</a> | <a href="#">Log In</a>
-						<button type="button" class="btn btn-default">Get Free Consultation</button>
-					</div>
-				</div>
-			</div>
+        <header class="container">
+            <div class="row">
+                <div class="col-md-12 navbar-top">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="contact">
+                                <h6><span class="text-muted">Phone: </span>+880 2 123456 | <span class="text-muted">Email: </span><a href="mailto:info@justiceleague.com">info@justiceleague.com</a></h6>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-md-offset-2">
+                            <div class="pull-right">
+                                <h6><a href="#">Sign Up</a> | <a href="#">Log In</a></h6>
+                                <button type="button" class="btn btn-default">Get Free Consultation</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- <div class="container"> -->
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/dist/index.html">
+                            <img src="/dist/images/logo/logo-text.png" height="auto" width="400px" class="img-responsive" alt="Image">
+                        </a>
+                        <br>
+                        <br>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
 
-			<nav class="navbar navbar-default" role="navigation">
-			        <div class="container-fluid">
-			          <!-- Brand and toggle get grouped for better mobile display -->
-			          <div class="navbar-header">
-			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-			              <span class="sr-only">Toggle navigation</span>
-			              <span class="icon-bar"></span>
-			              <span class="icon-bar"></span>
-			              <span class="icon-bar"></span>
-			            </button>
-			            <a class="navbar-brand" href="#">Law Firm</a>
-			          </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/dist/index.html"><h6>Home</h6></a></li>
+                            <li><a href="#"><h6>Practice Areas</h6></a></li>
+                            <li><a href="#"><h6>News</h6></a></li>
+                            <li><a href="#"><h6>Features</h6></a></li>
+                            <li><a href="#"><h6>Contact</h6></a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                <!-- </div> -->
+            </nav>
 
-			          <!-- Collect the nav links, forms, and other content for toggling -->
-			          <div class="collapse navbar-collapse navbar-ex1-collapse">
-			            <ul class="nav navbar-nav navbar-right">
-			              <li><a href="/dist/index.html"><h6>Home</h6></a></li>
-			              <li><a href="#"><h6>Practice Areas</h6></a></li>
-			              <li><a href="#"><h6>News</h6></a></li>
-			              <li><a href="#"><h6>Features</h6></a></li>
-			              <li><a href="#"><h6>Contact</h6></a></li>
+        </header>
 
-			            </ul>
-			          </div><!-- /.navbar-collapse -->
-			        </div>
-			      </nav>
+        <div class="image-slider">
+            <div id="carousel-id" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img alt="First slide" src="/dist/images/slide-1-1.jpg" height="750" width="2200">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h2>Example headline.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus at eligendi facere iste quaerat, hic possimus officia vel, necessitatibus rem ut ad assumenda voluptates molestias eum est veritatis. Fugiat, autem?</p>
+                                <p>
+                                    <a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a>
+                                    <a class="btn btn-lg btn-primary" href="#" role="button">Contact Us</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="Second slide" src="/dist/images/slide-2.jpg" height="750" width="2200">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h2>Another headline.</h2>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p>
+                                    <a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a>
+                                    <a class="btn btn-lg btn-primary" href="#" role="button">Contact Us</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
 
-		</header>
+        <section class="container welcome">
+            <h1>Welcome Message</h1>
+        </section>
 
-		<section class="image-slider">
-			<div id="carousel-id" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-id" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-id" data-slide-to="1" class=""></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="item active">
-						<img alt="First slide" src="/dist/images/slide-1-1.jpg" height="750" width="2200">
-						<div class="container">
-							<div class="carousel-caption">
-								<h2>Example headline.</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus at eligendi facere iste quaerat, hic possimus officia vel, necessitatibus rem ut ad assumenda voluptates molestias eum est veritatis. Fugiat, autem?</p>
-								<p>
-									<a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a>
-									<a class="btn btn-lg btn-primary" href="#" role="button">Contact Us</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<img alt="Second slide" src="/dist/images/slide-2.jpg" height="750" width="2200">
-						<div class="container">
-							<div class="carousel-caption">
-								<h2>Another headline.</h2>
-								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<p>
-									<a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a>
-									<a class="btn btn-lg btn-primary" href="#" role="button">Contact Us</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-				<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-			</div>
-		</section>
+        <section class="container practice-aream">
+            <h1>Practice Area</h1>
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-lg-4">
+                    <div class="practice-card">
+                        <p><i class="fa fa-3x fa-home"></i></p>
+                        <h4>Property Law</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quae voluptatibus dolores quasi labore velit qui rem quas provident, explicabo mollitia nostrum porro eum quibusdam, accusantium enim fugit, iusto non.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="practice-card">
+                        <p><i class="fa fa-3x fa-shield"></i></p>
+                        <h4>Finance &amp; Security Law</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quae voluptatibus dolores quasi labore velit qui rem quas provident, explicabo mollitia nostrum porro eum quibusdam, accusantium enim fugit, iusto non.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="practice-card">
+                        <p><i class="fa fa-3x fa-bank"></i></p>
+                        <h4>Corporate</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quae voluptatibus dolores quasi labore velit qui rem quas provident, explicabo mollitia nostrum porro eum quibusdam, accusantium enim fugit, iusto non.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-lg-4">
+                    <div class="practice-card">
+                        <p><i class="fa fa-3x fa-male"></i></p>
+                        <h4>Criminal Defence</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quae voluptatibus dolores quasi labore velit qui rem quas provident, explicabo mollitia nostrum porro eum quibusdam, accusantium enim fugit, iusto non.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="practice-card">
+                        <p><i class="fa fa-3x fa-car"></i></p>
+                        <h4>Serious Car Crash</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quae voluptatibus dolores quasi labore velit qui rem quas provident, explicabo mollitia nostrum porro eum quibusdam, accusantium enim fugit, iusto non.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="practice-card">
+                        <p><i class="fa fa-3x fa-child"></i></p>
+                        <h4>Child Labor</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quae voluptatibus dolores quasi labore velit qui rem quas provident, explicabo mollitia nostrum porro eum quibusdam, accusantium enim fugit, iusto non.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-lg-4">
+                    <div class="practice-card">
+                        <p><i class="fa fa-3x fa-male"></i></p>
+                        <h4>Sexual Abuse</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quae voluptatibus dolores quasi labore velit qui rem quas provident, explicabo mollitia nostrum porro eum quibusdam, accusantium enim fugit, iusto non.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="practice-card">
+                        <p><i class="fa fa-3x fa-balance-scale"></i></p>
+                        <h4>Justice Fight</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quae voluptatibus dolores quasi labore velit qui rem quas provident, explicabo mollitia nostrum porro eum quibusdam, accusantium enim fugit, iusto non.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="practice-card">
+                        <p><i class="fa fa-3x fa-thumbs-o-up"></i></p>
+                        <h4>Settlements</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quae voluptatibus dolores quasi labore velit qui rem quas provident, explicabo mollitia nostrum porro eum quibusdam, accusantium enim fugit, iusto non.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<section class="container welcome">
-			<h1>Welcome Message</h1>
-		</section>
+        <section class="container team">
+            <h1>My Team</h1>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="/dist/images/team/team-1.jpg" class="img-responsive" alt="Image">
+                        <div class="caption">
+                            <h4>Chris David</h4>
+                            <p><em>Associate / Family Lawyer</em></p>
+                            <div class="social-team">
+                                <a href="#" class="facebook"><i class="fa fa-facebook fa-lg fa-fw"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter fa-lg fa-fw"></i></a>
+                                <a href="#" class="linkedin"><i class="fa fa-linkedin fa-lg fa-fw"></i></a>
+                                <a href="#" class="google-plus"><i class="fa fa-google-plus fa-lg fa-fw"></i></a>
+                            </div>
+                            <p><a href="#" class="btn btn-primary" role="button">View Profile</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="/dist/images/team/team-2.jpg" class="img-responsive" alt="Image">
+                        <div class="caption">
+                            <h4>Diandra Homes</h4>
+                            <p><em>Attorney General</em></p>
+                            <div class="social-team">
+                                <a href="#" class="facebook"><i class="fa fa-facebook fa-lg fa-fw"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter fa-lg fa-fw"></i></a>
+                                <a href="#" class="linkedin"><i class="fa fa-linkedin fa-lg fa-fw"></i></a>
+                                <a href="#" class="google-plus"><i class="fa fa-google-plus fa-lg fa-fw"></i></a>
+                            </div>
+                            <p><a href="#" class="btn btn-primary" role="button">View Profile</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="/dist/images/team/team-3.jpg" class="img-responsive" alt="Image">
+                        <div class="caption">
+                            <h4>Frank Will</h4>
+                            <p><em>Property Lawyer</em></p>
+                            <div class="social-team">
+                                <a href="#" class="facebook"><i class="fa fa-facebook fa-lg fa-fw"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter fa-lg fa-fw"></i></a>
+                                <a href="#" class="linkedin"><i class="fa fa-linkedin fa-lg fa-fw"></i></a>
+                                <a href="#" class="google-plus"><i class="fa fa-google-plus fa-lg fa-fw"></i></a>
+                            </div>
+                            <p><a href="#" class="btn btn-primary" role="button">View Profile</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="/dist/images/team/team-4.jpg" class="img-responsive" alt="Image">
+                        <div class="caption">
+                            <h4>Jenny Scott</h4>
+                            <p><em>Senior Lawyer</em></p>
+                            <div class="social-team">
+                                <a href="#" class="facebook"><i class="fa fa-facebook fa-lg fa-fw"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter fa-lg fa-fw"></i></a>
+                                <a href="#" class="linkedin"><i class="fa fa-linkedin fa-lg fa-fw"></i></a>
+                                <a href="#" class="google-plus"><i class="fa fa-google-plus fa-lg fa-fw"></i></a>
+                            </div>
+                            <p><a href="#" class="btn btn-primary" role="button">View Profile</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<section class="container practice-aream">
-			<h1>Practice Area</h1>
-		</section>
+        <section class="container why-choose">
+            <h1>Why Choose Us</h1>
+        </section>
 
-		<section class="container team">
-			<h1>My Team</h1>
-		</section>
+        <section class="container blog">
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <h1>Legal News</h1>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <h1>Happy Clients</h1>
+                </div>
+            </div>
+        </section>
 
-		<section class="container why-choose">
-			<h1>Why Choose Us</h1>
-		</section>
+        <section class="container free-consultation">
+            <h1>Free Consultation</h1>
+        </section>
 
-		<section class="container blog">
-			<div class="row">
-				<div class="col-md-6 col-lg-6">
-					<h1>Legal News</h1>
-				</div>
-				<div class="col-md-6 col-lg-6">
-					<h1>Happy Clients</h1>
-				</div>
-			</div>
-		</section>
-
-		<section class="container free-consultation">
-			<h1>Free Consultation</h1>
-		</section>
-
-		<section class="container clients">
-			<h1>Out Clients</h1>
-		</section>
+        <section class="container clients">
+            <h1>Out Clients</h1>
+        </section>
     <footer class="">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-lg-4">
-                    <h4>LAWFIRM <br><small>We Fight for Justice</small></h4>
+                    <h4>Justice League <br><small>We Fight for Justice</small></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel reprehenderit molestiae iure officiis sapiente quaerat enim tenetur dolorum expedita provident, eaque incidunt, libero natus itaque rerum perferendis. Perferendis, dolores, ea.</p>
                     <br>
-                    <button type="button" class="btn btn-default">View More</button>
+                    <button type="button" class="btn btn-primary">View More</button>
                 </div>
                 <div class="col-md-4 col-lg-4">
                     <h4>Practice Area</h4>
@@ -158,25 +312,27 @@
                 <div class="col-md-4 col-lg-4">
                     <h4>We Are Here</h4>
 
-                    <div class="social">
+                    <div class="address">
                         <p><i class="fa fa-bank"></i>Dhaka</p>
-                        <br>
-
                         <p><i class="fa fa-phone"></i> Phone: +880 2 123456</p>
                         <p><i class="fa fa-fax"></i> Fax: +880 2 123456</p>
-                        <p><i class="fa fa-envelope"></i> Email: info@lawfirm.com</p>
-                        <p><i class="fa fa-globe"></i> www.lawfirm.com</p>
+                        <p><i class="fa fa-envelope"></i> Email: info@justiceleague.com</p>
+                        <p><i class="fa fa-globe"></i><a href="www.justiceleague.com"> www.justiceleague.com</a></p>
                         <br>
-                        <a class="" href="#"><i class="fa fa-facebook"></i></a>
-                        <a class="" href="#"><i class="fa fa-twitter"></i></a>
-                        <a class="" href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <div class="social-footer">
+                        <a href="#" class="facebook"><i class="fa fa-facebook fa-lg fa-fw"></i></a>
+                        <a href="#" class="twitter"><i class="fa fa-twitter fa-lg fa-fw"></i></a>
+                        <a href="#" class="linkedin"><i class="fa fa-linkedin fa-lg fa-fw"></i></a>
+                        <a href="#" class="google-plus"><i class="fa fa-google-plus fa-lg fa-fw"></i></a>
                     </div>
                 </div>
             </div>
+            <br>
             <hr>
             <div class="row">
                 <div class="col-md-12">
-                    <h6 class="text-muted" align="center">2016 &copy; Jobayer Arman</h6>
+                    <div class="copyright"><h6 align="center">Jobayer Arman &copy; 2016</h6></div>
                 </div>
             </div>
         </div>
@@ -190,7 +346,7 @@
 
     <!-- User Scripts -->
     <!-- build:js /js/script.min.js -->
-    <script src="/dist/js/scrip.js"></script>
+    <script src="/dist/js/script.js"></script>
     <!-- /build -->
   </body>
 </html>
