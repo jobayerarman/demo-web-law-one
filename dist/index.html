@@ -12,8 +12,14 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 
         <!-- User Stylesheet -->
-        <!-- build:css /css/style.min.css -->
+        <!-- build:css css/style.min.css -->
         <link href="/dist/css/style.css" rel="stylesheet">
+        <!-- /build -->
+
+        <!-- favicon -->
+        <!-- build:[href] favicon.ico -->
+        <link rel="shortcut icon" href="/dist/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/dist/favicon.ico" type="image/x-icon">
         <!-- /build -->
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -25,6 +31,7 @@
     </head>
 
     <body>
+
 
         <header class="container">
             <div class="row">
@@ -38,7 +45,7 @@
                         <div class="col-md-5 col-md-offset-2">
                             <div class="pull-right">
                                 <h6><a href="#">Sign Up</a> | <a href="#">Log In</a></h6>
-                                <button type="button" class="btn btn-default">Get Free Consultation</button>
+                                <button type="button" class="btn btn-info">Get Free Consultation</button>
                             </div>
                         </div>
                     </div>
@@ -48,8 +55,12 @@
                 <!-- <div class="container"> -->
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
+                        <!-- build:[href] ./ -->
                         <a class="navbar-brand" href="/dist/index.html">
+                        <!-- /build -->
+                            <!-- build:[src] images/logo/ -->
                             <img src="/dist/images/logo/logo-text.png" height="auto" width="400px" class="img-responsive" alt="Image">
+                            <!-- /build -->
                         </a>
                         <br>
                         <br>
@@ -64,8 +75,10 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <ul class="nav navbar-nav navbar-right">
+                            <!-- build:[href] ./ -->
                             <li><a href="/dist/index.html"><h6>Home</h6></a></li>
-                            <li><a href="#"><h6>Practice Areas</h6></a></li>
+                            <!-- /build -->
+                            <li><a href="/dist/pages/practice-1.html"><h6>Practice Areas</h6></a></li>
                             <li><a href="#"><h6>News</h6></a></li>
                             <li><a href="#"><h6>Features</h6></a></li>
                             <li><a href="#"><h6>Contact</h6></a></li>
@@ -84,7 +97,9 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
+                        <!-- build:[src] images/ -->
                         <img alt="First slide" src="/dist/images/slide-1-1.jpg" height="750" width="2200">
+                        <!-- /build -->
                         <div class="container">
                             <div class="carousel-caption">
                                 <h2>Example headline.</h2>
@@ -97,7 +112,9 @@
                         </div>
                     </div>
                     <div class="item">
+                        <!-- build:[src] images/ -->
                         <img alt="Second slide" src="/dist/images/slide-2.jpg" height="750" width="2200">
+                        <!-- /build -->
                         <div class="container">
                             <div class="carousel-caption">
                                 <h2>Another headline.</h2>
@@ -116,7 +133,61 @@
         </div>
 
         <section class="container welcome">
-            <h1>Welcome Message</h1>
+            <h1>Welcome to Justice League</h1>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <p><i class="fa fa-fw fa-4x fa-file-text-o"></i></p>
+                    <h3>Well Planners</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam blanditiis consequatur dolore vero impedit eius aperiam soluta, placeat eveniet nobis hic dolorem cupiditate, fugiat aspernatur quia quidem enim. Laboriosam, fuga!</p>
+                </div>
+                <div class="col-md-4">
+                    <p><i class="fa fa-fw fa-4x fa-thumbs-o-up"></i></p>
+                    <h3>Settlement</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae incidunt praesentium obcaecati, dicta omnis quasi nobis odio! Ex, possimus quos consectetur minima culpa minus commodi. Ea assumenda expedita, ipsa pariatur!</p>
+                </div>
+                <div class="col-md-4">
+                    <p><i class="fa fa-fw fa-4x fa-balance-scale"></i></p>
+                    <h3>Fight for Justice</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam minus, modi repudiandae similique ex unde provident, quisquam eum cum odio eveniet, ullam. Inventore nihil in mollitia consequuntur magnam voluptas minus.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h1>Why Choose Us</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="outer-box">
+                        <div class="inner-box">
+                            <div class="icon-box"><i class="fa fa-male"></i></div>
+                            <div class="text-box">
+                                <h3>We have best Attorneys team</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ipsum, quia, vero sunt, corporis cumque veritatis, ea quae similique optio voluptate necessitatibus! Delectus dicta provident blanditiis odio veritatis, nobis repellat!</p></div>
+                        </div>
+                        <div class="inner-box">
+                            <div class="icon-box"><i class="fa fa-list-alt"></i></div>
+                            <div class="text-box">
+                                <h3>Best Case Strategy</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad saepe, numquam voluptatem sed delectus ab at similique. Enim dicta tempora pariatur sed dolor magnam quis nisi ad omnis, ab quos.</p>
+                            </div>
+                        </div>
+                        <div class="inner-box">
+                            <div class="icon-box"><i class="fa fa-map-o"></i></div>
+                            <div class="text-box">
+                                <h3>Review your Case Documents</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, illum. Quia iste fugiat at cumque aliquid, aliquam, est obcaecati eos sunt, fuga facere. Laboriosam nam obcaecati iure enim suscipit, officiis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="choose-img">
+                        <!-- build:[src] images/ -->
+                        <img src="/dist/images/choose_1.jpg" class="img-responsive" alt="Image">
+                        <!-- /build -->
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="container practice-aream">
@@ -210,7 +281,9 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="thumbnail">
+                        <!-- build:[src] images/team/ -->
                         <img src="/dist/images/team/team-1.jpg" class="img-responsive" alt="Image">
+                        <!-- /build -->
                         <div class="caption">
                             <h4>Chris David</h4>
                             <p><em>Associate / Family Lawyer</em></p>
@@ -226,7 +299,9 @@
                 </div>
                 <div class="col-md-3">
                     <div class="thumbnail">
+                        <!-- build:[src] images/team/ -->
                         <img src="/dist/images/team/team-2.jpg" class="img-responsive" alt="Image">
+                        <!-- /build -->
                         <div class="caption">
                             <h4>Diandra Homes</h4>
                             <p><em>Attorney General</em></p>
@@ -242,7 +317,9 @@
                 </div>
                 <div class="col-md-3">
                     <div class="thumbnail">
+                        <!-- build:[src] images/team/ -->
                         <img src="/dist/images/team/team-3.jpg" class="img-responsive" alt="Image">
+                        <!-- /build -->
                         <div class="caption">
                             <h4>Frank Will</h4>
                             <p><em>Property Lawyer</em></p>
@@ -258,7 +335,9 @@
                 </div>
                 <div class="col-md-3">
                     <div class="thumbnail">
+                        <!-- build:[src] images/team/ -->
                         <img src="/dist/images/team/team-4.jpg" class="img-responsive" alt="Image">
+                        <!-- /build -->
                         <div class="caption">
                             <h4>Jenny Scott</h4>
                             <p><em>Senior Lawyer</em></p>
@@ -275,23 +354,75 @@
             </div>
         </section>
 
-        <section class="container why-choose">
-            <h1>Why Choose Us</h1>
-        </section>
-
         <section class="container blog">
             <div class="row">
                 <div class="col-md-6 col-lg-6">
                     <h1>Legal News</h1>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4"><img src="/dist/images/blog/news-1.jpg" class="img-responsive" alt="Image"></div>
+                        <div class="col-md-8">
+                            <h5>Lorem ipsum dolor sit amet</h5>
+                            <p class="text-muted"><small>November 15, 2015 // By: John Patrik</small></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt assumenda fuga perspiciatis et sint veniam ipsam quaerat consequuntur distinctio sequi labore at maxime, velit adipisci expedita nemo dolore maiores placeat.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4"><img src="/dist/images/blog/news-1.jpg" width="165" height="120" class="img-responsive" alt="Image"></div>
+                        <div class="col-md-8">
+                            <h5>Lorem ipsum dolor sit amet</h5>
+                            <p class="text-muted"><small>November 25, 2015 // By: John Patrik</small></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione veritatis eius nihil possimus vel reprehenderit officia dignissimos, maiores quod necessitatibus non quae, commodi, ad consequatur unde illum eum minus quibusdam?</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6 col-lg-6">
                     <h1>Happy Clients</h1>
+                    <br>
+                    <p class="bg-muted quote">
+                        <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ducimus vero accusamus porro eaque, debitis voluptates fuga quod. Laboriosam totam, quos quo sint. Magni dolor animi corporis ullam deleniti, perspiciatis.</em>
+                        <br>
+                        <img src="/dist/images/team/client-img-2.jpg" class="img-responsive img-circle" alt="Image">
+                        John Doe <br> <em><small>Criminal Lawyer</small></em>
+                    </p>
                 </div>
+
             </div>
         </section>
 
-        <section class="container free-consultation">
-            <h1>Free Consultation</h1>
+        <section class="free-consultation">
+            <div class="container">
+                <h1>Free Consultation</h1>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quas atque at, sed consequatur animi commodi laborum illum eveniet voluptas, dolores voluptates mollitia ad aspernatur nobis maxime! Ipsum, atque, magnam!</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="text" name="name" id="input" class="form-control" value="" required="required" placeholder="Your Name">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="email" name="email" id="input" class="form-control" value="" required="required" placeholder="Your Email">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="number" name="phone" id="input" class="form-control" value="" required="required" placeholder="Phone Number">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" name="practice" id="input" class="form-control" value="" required="required" placeholder="Add Practice Area">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <textarea name="" id="input" class="form-control" rows="10" required="required" placeholder="Case Description"></textarea>
+                    </div>
+                </div>
+                <br>
+            </div>
         </section>
 
         <section class="container clients">
@@ -308,6 +439,15 @@
                 </div>
                 <div class="col-md-4 col-lg-4">
                     <h4>Practice Area</h4>
+                    <div class="practice-area">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-home"></i> Property Law</a></li>
+                            <li><a href="#"><i class="fa fa-shield"></i> Finance &amp; Security Law</a></li>
+                            <li><a href="#"><i class="fa fa-bank"></i> Corporate</a></li>
+                            <li><a href="#"><i class="fa fa-male"></i> Criminal Defense</a></li>
+                            <li><a href="#"><i class="fa fa-thumbs-o-up"></i> Settlements</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-md-4 col-lg-4">
                     <h4>We Are Here</h4>
@@ -345,7 +485,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     <!-- User Scripts -->
-    <!-- build:js /js/script.min.js -->
+    <!-- build:[src] js/ -->
     <script src="/dist/js/script.js"></script>
     <!-- /build -->
   </body>

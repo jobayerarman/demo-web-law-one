@@ -11,8 +11,8 @@
 .navbar {
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  //margin-bottom: @navbar-margin-bottom;
-  border: 1px solid transparent;
+  // margin-bottom: @navbar-margin-bottom;
+  // border: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
   &:extend(.clearfix all);
@@ -413,11 +413,13 @@
   .navbar-nav {
     > li > a {
       color: @navbar-default-link-color;
+      border-bottom: 5px solid transparent;
 
       &:hover,
       &:focus {
         color: @navbar-default-link-hover-color;
-        background-color: @navbar-default-link-hover-bg;
+        border-bottom: 5px solid @brand-primary;
+        // background-color: @navbar-default-link-hover-bg;
       }
     }
     > .active > a {
@@ -425,7 +427,8 @@
       &:hover,
       &:focus {
         color: @navbar-default-link-active-color;
-        background-color: @navbar-default-link-active-bg;
+        border-bottom: 5px solid @brand-primary;
+       // background-color: @navbar-default-link-active-bg;
       }
     }
     > .disabled > a {
@@ -433,7 +436,7 @@
       &:hover,
       &:focus {
         color: @navbar-default-link-disabled-color;
-        background-color: @navbar-default-link-disabled-bg;
+        // background-color: @navbar-default-link-disabled-bg;
       }
     }
   }

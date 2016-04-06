@@ -8,6 +8,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+
   &:before {
     position: absolute;
     top: 0;
@@ -24,6 +25,42 @@ footer {
   }
   p {
     color: @gray-lighter;
+  }
+  .practice-area {
+    ul {
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+      li {
+        width: 100%;
+        margin: 0 0 15px 0;
+
+        border: 1px solid @gray-light;
+        a {
+          display: block;
+
+          text-decoration: none;
+          transition: all 0.5s ease;
+
+          color: white;
+          &:hover {
+            background-color: @brand-primary;
+          }
+          i {
+            line-height: 40px;
+
+            width: 45px;
+            height: 40px;
+            margin-right: 10px;
+
+            text-align: center;
+
+            background-color: @brand-primary;
+          }
+        }
+      }
+    }
   }
   .address {
     i {

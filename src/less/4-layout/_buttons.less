@@ -7,19 +7,23 @@
 // --------------------------------------------------
 
 .btn {
-  display: inline-block;
-  margin-bottom: 0; // For input.btn
   font-weight: @btn-font-weight;
+
+  display: inline-block;
+
+  margin-bottom: 0; // For input.btn
+
+  cursor: pointer;
   text-align: center;
   vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
   white-space: nowrap;
+
+  border: 1px solid transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+
+  touch-action: manipulation;
   .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
   .user-select(none);
-
   &,
   &:active,
   &.active {
@@ -28,29 +32,28 @@
       .tab-focus();
     }
   }
-
   &:hover,
   &:focus,
   &.focus {
-    color: @btn-default-color;
     text-decoration: none;
-  }
 
+    color: @btn-default-color;
+  }
   &:active,
   &.active {
     outline: 0;
     background-image: none;
-    .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
-  }
 
+    .box-shadow(inset 0 3px 5px rgba(0,0,0,0.125));
+  }
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
     cursor: @cursor-disabled;
-    .opacity(.65);
+
+    .opacity(0.65);
     .box-shadow(none);
   }
-
   a& {
     &.disabled,
     fieldset[disabled] & {
@@ -85,13 +88,29 @@
 .btn-danger {
   .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
 }
+
+// Ghost buttons
+// -------------------------
+
 // Transparent Ghost button
 .btn-ghost {
-  .button-variant(@btn-ghost-color; @btn-ghost-bg; @btn-ghost-border);
   font-family: @headings-font-family;
   font-weight: @headings-font-weight;
-  border-radius: 0;
+
+  transition: all 0.2s ease-in-out;
+
   border: 2px solid;
+  border-radius: 0;
+}
+
+.btn-ghost-default {
+  .button-variant-ghost(@ghost-default-color; @ghost-default-bg; @ghost-default-border; @ghost-default-hover);
+}
+.btn-ghost-primary {
+  .button-variant-ghost(@ghost-primary-color; @ghost-primary-bg; @ghost-primary-color; @ghost-primary-hover);
+}
+.btn-ghost-info {
+  .button-variant-ghost(@ghost-info-color; @ghost-info-bg; @ghost-info-color; @ghost-info-hover);
 }
 
 
@@ -100,16 +119,17 @@
 
 // Make a button look and behave like a link
 .btn-link {
-  color: @link-color;
   font-weight: normal;
-  border-radius: 0;
 
+  color: @link-color;
+  border-radius: 0;
   &,
   &:active,
   &.active,
   &[disabled],
   fieldset[disabled] & {
     background-color: transparent;
+
     .box-shadow(none);
   }
   &,
@@ -120,16 +140,18 @@
   }
   &:hover,
   &:focus {
-    color: @link-hover-color;
     text-decoration: @link-hover-decoration;
+
+    color: @link-hover-color;
     background-color: transparent;
   }
   &[disabled],
   fieldset[disabled] & {
     &:hover,
     &:focus {
-      color: @btn-link-disabled-color;
       text-decoration: none;
+
+      color: @btn-link-disabled-color;
     }
   }
 }
@@ -156,6 +178,7 @@
 
 .btn-block {
   display: block;
+
   width: 100%;
 }
 

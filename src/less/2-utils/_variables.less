@@ -19,7 +19,7 @@
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
-@brand-ghost:           rgba(0, 0, 0, 0);
+@brand-ghost:           rgba(0, 0, 0, 0.1);
 
 
 //== Scaffolding
@@ -156,9 +156,20 @@
 @btn-danger-bg:                  @brand-danger;
 @btn-danger-border:              darken(@btn-danger-bg, 5%);
 
-@btn-ghost-color:               #333;
-@btn-ghost-bg:                  @brand-ghost;
-@btn-ghost-border:              @gray-dark;
+@ghost-default-color:            @gray-dark;
+@ghost-default-bg:               transparent;
+@ghost-default-border:           @gray-dark;
+@ghost-default-hover:            @gray-dark;
+
+@ghost-primary-color:            @brand-primary;
+@ghost-primary-bg:               transparent;
+@ghost-primary-border:           @brand-primary;
+@ghost-primary-hover:            @brand-primary;
+
+@ghost-info-color:               @brand-info;
+@ghost-info-bg:                  transparent;
+@ghost-info-border:              @brand-info;
+@ghost-info-hover:               @brand-info;
 
 @btn-link-disabled-color:        @gray-light;
 
